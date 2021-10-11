@@ -1,52 +1,53 @@
 package com.example.exercicioskotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.exercicioskotlin.databinding.ActivityListasBinding
-import com.example.exercicioskotlin.databinding.ActivityMainBinding
 
 class ListasActivity : AppCompatActivity() {
     private lateinit var binding: ActivityListasBinding
 
-    private val listaFrutas = listOf("maça", "mamão", "abacate")
-    private val listaVegetais = listOf("pepino", "alface", "pimentão")
+    private val frutas = listOf ("maça" , "mamao", "abacate")
+    private val vegetais = listOf("pepino", "alface" , "pimentao")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityListasBinding.inflate(layoutInflater)
 
-        binding.btAnalisar.setOnClickListener{
-            binding.txtSaida.text = analisar(binding.txtEntrada.text.toString())
+        binding.btAnalisar.setOnClickListener {
+            binding.txtSaida.text = analisar (binding.txtEntrada.text.toString())
         }
-
 
         setContentView(binding.root)
     }
 
-    fun analisar(entrada: String): String{
+    fun analisar(entrada: String):String {
         var saida = ""
+
         var encontrouAlimento = false
 
-        for (fruta in listaFrutas){
-            if (fruta == entrada){
-                saida = "e uma fruta"
+        for (fruta in frutas) {
+            if (fruta == entrada) {
+                saida = "É uma fruta"
                 encontrouAlimento = true
+                break
             }
-            break
+
+        }
+        for (vegetal in vegetais) {
+            if (vegetal == entrada) {
+                saida = "É um vegetal"
+                encontrouAlimento = true
+                break
+            }
+
+        }
+        if (!encontrouAlimento){
+            saida = "Não sei o que é isto"
         }
 
-        for (vegetal in listaVegetais){
-            if (vegetal == entrada){
-                saida = "e um vegetal"
-                encontrouAlimento = true
-            }
-            break
-        }
-
-        if(encontrouAlimento)
-            saida = "não sei o que é isso"
         return saida
-
     }
 }

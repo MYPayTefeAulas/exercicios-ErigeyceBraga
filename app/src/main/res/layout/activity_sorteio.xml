@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SorteioActivity">
+
+    <Button
+        android:id="@+id/btTrocarLado1"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:text="Trocar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btTrocarLado2"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="TROCAR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btTrocarLado1"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/btTrocarLado1"
+        app:layout_constraintTop_toBottomOf="@+id/btTrocarLado1" />
+
+    <Button
+        android:id="@+id/btTrocarLado3"
+        android:layout_width="121dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Trocar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btTrocarLado1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btTrocarLado1"
+        app:layout_constraintTop_toBottomOf="@+id/btTrocarLado2" />
+
+    <Button
+        android:id="@+id/btSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="SORTEAR"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTrocarLado1" />
+
+    <TextView
+        android:id="@+id/txtSaida1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btTrocarLado1"
+        app:layout_constraintEnd_toStartOf="@+id/txtLado1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btTrocarLado1" />
+
+    <TextView
+        android:id="@+id/txtSaida2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSaida1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSaida1"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaida1" />
+
+    <TextView
+        android:id="@+id/txtSaida3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSaida2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSaida2"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaida2" />
+
+    <TextView
+        android:id="@+id/txtLado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="4 lados"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btTrocarLado1"
+        app:layout_constraintEnd_toStartOf="@+id/btTrocarLado1"
+        app:layout_constraintTop_toTopOf="@+id/btTrocarLado1" />
+
+    <TextView
+        android:id="@+id/txtLado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="6 lados"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLado1"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/txtLado1"
+        app:layout_constraintTop_toBottomOf="@+id/txtLado1" />
+
+    <TextView
+        android:id="@+id/txtLado3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="8 lados"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLado2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtLado2"
+        app:layout_constraintTop_toBottomOf="@+id/txtLado2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SORTEIO DE DADOS"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btTrocarLado1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
