@@ -23,11 +23,11 @@ class PessoasActivity : AppCompatActivity() {
             binding.txtSaida.text = imprimePessoa()
         }
 
-        binding.btSalvar.setOnClickListener {
-            nome = binding.txtNome.text.toString()
-            binding.txtNome.text.clear()
-            idade = binding.txtIdade.text.toString().toInt()
-            binding.txtIdade.text.clear()
+        binding.btSalvarpessoa.setOnClickListener {
+            nome = binding.txtNomepessoa.text.toString()
+            binding.txtNomepessoa.text.clear()
+            idade = binding.txtIdadepessoa.text.toString().toInt()
+            binding.txtIdadepessoa.text.clear()
 
             val pessoa = Pessoa(nome,idade)
             listaPessoas.add(pessoa)

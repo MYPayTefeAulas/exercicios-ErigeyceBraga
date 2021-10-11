@@ -1,9 +1,10 @@
 package com.example.exercicioskotlin
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.widget.ListViewAutoScrollHelper
+import com.example.exercicioskotlin.Greeter.Greeter1Activity
 import com.example.exercicioskotlin.databinding.ActivityTelaInicialBinding
 
 class TelaInicialActivity : AppCompatActivity() {
@@ -32,6 +33,8 @@ class TelaInicialActivity : AppCompatActivity() {
             val intent = Intent(this@TelaInicialActivity, SorteioActivity::class.java)
             startActivity(intent)
         }
+
+        binding.txtTitulo.setTextColor(Color.rgb(201, 103,103))
 
         setContentView(binding.root)
     }

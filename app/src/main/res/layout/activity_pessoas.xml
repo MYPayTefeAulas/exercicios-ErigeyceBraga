@@ -14,10 +14,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdade" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdadepessoa" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtNomepessoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtIdade"
+        android:id="@+id/txtIdadepessoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+        app:layout_constraintTop_toBottomOf="@+id/agenda_TxtNom" />
 
     <Button
         android:id="@+id/btImprimir"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtSaida" />
 
     <Button
-        android:id="@+id/btSalvar"
+        android:id="@+id/btSalvarpessoa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"

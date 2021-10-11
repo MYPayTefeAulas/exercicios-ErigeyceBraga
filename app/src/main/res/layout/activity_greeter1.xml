@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Greeter1Activity">
+    tools:context=".Greeter.Greeter1Activity">
 
     <TextView
         android:id="@+id/txtGreeter"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtGreeter" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtnom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtSaida" />
 
     <EditText
-        android:id="@+id/txtIdade"
+        android:id="@+id/txtIdadegree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -86,7 +86,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+        app:layout_constraintTop_toBottomOf="@+id/agenda_TxtNom" />
 
     <Button
         android:id="@+id/btSalvarGreeter2"
@@ -94,9 +94,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="Salvar"
-        app:layout_constraintBottom_toBottomOf="@+id/txtIdade"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIdadegree"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtNome"
+        app:layout_constraintTop_toTopOf="@+id/agenda_TxtNom"
         app:layout_constraintVertical_bias="0.492" />
 
     <TextView
@@ -118,6 +118,6 @@
         app:layout_constraintEnd_toEndOf="@+id/txtSaida2"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/txtSaida2"
-        app:layout_constraintTop_toBottomOf="@+id/txtIdade" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIdadegree" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
